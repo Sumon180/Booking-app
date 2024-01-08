@@ -22,19 +22,24 @@ const ItemDetail: FC<ItemDetailProps> = ({ params }) => {
   }
 
   const handleGoBack = () => {
-    router.push("/items");
+    router.push("/");
   };
 
   return (
-    <div key={item.id}>
-      <h1 className="text-2xl font-bold mb-4">{item.name}</h1>
-      <p>ID: {item.id}</p>
-      <button
-        className="bg-blue-500 text-white px-4 py-2 rounded"
-        onClick={handleGoBack}
+    <div className="flex items-center justify-center h-screen">
+      <div
+        key={item.id}
+        className="bg-white shadow-md p-6 rounded-md max-w-md mx-auto my-4"
       >
-        Go Back
-      </button>
+        <h1 className="text-3xl font-bold mb-4 text-blue-700">{item.name}</h1>
+        <p className="text-gray-600">ID: {item.id}</p>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md mt-4 transition-colors duration-300"
+          onClick={handleGoBack}
+        >
+          Go Back
+        </button>
+      </div>
     </div>
   );
 };
