@@ -1,9 +1,22 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
-import { getItems } from "@/utils/db";
+import { deleteItem, getItems } from "@/utils/db";
+import { useRouter } from "next/navigation";
 
 const UserList = () => {
+  const router = useRouter();
   const items = getItems();
+
+  const removeItem = async (id: string) => {
+    const confirmed = confirm("Are you sure?");
+
+    if (confirmed) {
+      deleteItem(id);
+      router.refresh();
+    }
+  };
 
   return (
     <div>
@@ -14,7 +27,7 @@ const UserList = () => {
             {item.name}
             <div className="flex items-center gap-5">
               <Link href={`/items/update/${item.id}`}>Update</Link>
-              <button>Delete</button>
+              <button onClick={() => removeItem(item.id)}>Delete</button>
             </div>
           </li>
         ))}

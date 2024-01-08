@@ -4,13 +4,7 @@ import { FC, Fragment } from "react";
 import { getItemById } from "@/utils/db";
 import { useRouter } from "next/navigation";
 
-interface ItemDetailProps {
-  params: {
-    id: string;
-  };
-}
-
-const ItemDetail: FC<ItemDetailProps> = ({ params }) => {
+const ItemDetail: FC<ParamslProps> = ({ params }) => {
   const router = useRouter();
   const { id } = params;
 
