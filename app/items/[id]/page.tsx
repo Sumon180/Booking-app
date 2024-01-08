@@ -1,6 +1,6 @@
 "use client";
 
-import { FC } from "react";
+import { FC, Fragment } from "react";
 import { getItemById } from "@/utils/db";
 import { useRouter } from "next/navigation";
 
@@ -26,18 +26,16 @@ const ItemDetail: FC<ItemDetailProps> = ({ params }) => {
   };
 
   return (
-    <>
-      <div key={item.id}>
-        <h1 className="text-2xl font-bold mb-4">{item.name}</h1>
-        <p>ID: {item.id}</p>
-        <button
-          className="bg-blue-500 text-white px-4 py-2 rounded"
-          onClick={handleGoBack}
-        >
-          Go Back
-        </button>
-      </div>
-    </>
+    <div key={item.id}>
+      <h1 className="text-2xl font-bold mb-4">{item.name}</h1>
+      <p>ID: {item.id}</p>
+      <button
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+        onClick={handleGoBack}
+      >
+        Go Back
+      </button>
+    </div>
   );
 };
 
