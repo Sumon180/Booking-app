@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { deleteItem, getItems } from "@/utils/db";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 const UserList = () => {
   const router = useRouter();
@@ -15,8 +16,15 @@ const UserList = () => {
     if (confirmed) {
       deleteItem(id);
       router.refresh();
+      toast.success("Item deleted");
     }
   };
+
+  if (!items.length) {
+    return (
+      <h1 className="text-2xl font-bold mb-4">Hey user not created yet</h1>
+    );
+  }
 
   return (
     <div>
