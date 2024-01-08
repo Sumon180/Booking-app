@@ -1,4 +1,4 @@
 interface Item {
-  id: number;
+  id: string;
   name: string;
 }

@@ -14,7 +14,7 @@ const CreateItem: FC = () => {
       toast.error("Please enter a item name");
     } else {
       const newItem = {
-        id: Date.now(),
+        id: Date.now().toString(),
         name: itemName,
       };
 

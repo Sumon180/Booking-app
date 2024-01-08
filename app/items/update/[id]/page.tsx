@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 interface UpdateItemProps {
   params: {
-    id: number;
+    id: string;
   };
 }
 
