@@ -15,7 +15,7 @@ const ItemDetail: FC<ItemDetailProps> = ({ params }) => {
   const { id } = params;
 
   const item = getItemById(id);
-  console.log(item);
+  // console.log(item);
 
   if (!item) {
     return <div>Item not found</div>;
