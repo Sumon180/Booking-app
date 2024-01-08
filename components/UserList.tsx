@@ -29,12 +29,20 @@ const UserList = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Item List</h1>
-      <ul className="text-center w-96 max-w-full p-8 bg-white shadow-md rounded-md">
+      <ul className="text-center w-[40rem] max-w-full p-8 bg-white shadow-md rounded-md">
         {items.map((item) => (
-          <li key={item.id} className="mb-2 flex items-center justify-between">
+          <li
+            key={item.id}
+            className="mb-2 border-b flex items-center justify-between"
+          >
             {item.name}
-            <div className="flex items-center gap-5">
-              <Link href={`/items/update/${item.id}`}>Update</Link>
+            <div className="flex items-center gap-5 text-sm">
+              <Link
+                href={`/items/update/${item.id}`}
+                className="hover:text-blue-600"
+              >
+                Update
+              </Link>
               <button onClick={() => removeItem(item.id)}>Delete</button>
             </div>
           </li>

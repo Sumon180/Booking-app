@@ -1,24 +1,19 @@
-import { FC } from "react";
-import UserList from "@/components/UserList";
-import Link from "next/link";
-import { Toaster } from "react-hot-toast";
+import Image from "next/image";
+import banner from "@/public/pexels-arthouse-studio-4557304.jpg";
+import BookForm from "@/components/BookForm";
 
-const Home: FC<{ items: Item[] }> = () => {
+const Home = () => {
   return (
-    <>
-      <Toaster position="bottom-left" />
-      <div className="flex items-center justify-center h-screen bg-gray-100">
-        <div>
-          <UserList />
-          <Link
-            href="/items/create"
-            className="mt-4 inline-block text-blue-600 hover:underline"
-          >
-            Create Item
-          </Link>
+    <div className="bg-gray-100 h-screen pt-20 px-5">
+      <div>
+        <div className="w-full ">
+          <BookForm />
+        </div>
+        <div className="">
+          <h1>Hello Sumon</h1>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
