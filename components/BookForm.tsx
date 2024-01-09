@@ -1,14 +1,28 @@
 "use client";
 
-import { fail } from "assert";
 import React, { useState } from "react";
+import { DateRangePicker } from "react-date-range";
+import { addDays } from "date-fns";
 import { CiSearch } from "react-icons/ci";
+
+interface CustomDateRange {
+  startDate: Date;
+  endDate: Date;
+  key: string;
+}
 
 const BookForm = () => {
   const [place, setPlace] = useState(false);
   const [isCheckIn, setIsCheckIn] = useState(false);
   const [isCheckOut, setIsCheckOut] = useState(false);
   const [guest, setGuest] = useState(false);
+  const [state, setState] = useState<CustomDateRange[]>([
+    {
+      startDate: new Date(),
+      endDate: addDays(new Date(), 5),
+      key: "selection",
+    },
+  ]);
 
   const handlePlace = () => {
     setPlace(!place);
@@ -104,13 +118,27 @@ const BookForm = () => {
           </div>
         )}
         {isCheckIn && (
-          <div className="absolute bg-white shadow-lg p-5 rounded-md top-[5rem] left-1/4">
-            <p>isCheckIn</p>
+          <div className="absolute bg-white shadow-lg p-5 rounded-md top-[5rem]">
+            <DateRangePicker
+              onChange={(item) => setState([item.selection as CustomDateRange])}
+              showPreview={true}
+              moveRangeOnFirstSelection={false}
+              months={2}
+              ranges={state}
+              direction="horizontal"
+            />
           </div>
         )}
         {isCheckOut && (
-          <div className="absolute bg-white shadow-lg p-5 rounded-md top-[5rem] left-2/4">
-            <p>isCheckOut</p>
+          <div className="absolute bg-white shadow-lg p-5 rounded-md top-[5rem]">
+            <DateRangePicker
+              onChange={(item) => setState([item.selection as CustomDateRange])}
+              showPreview={true}
+              moveRangeOnFirstSelection={false}
+              months={2}
+              ranges={state}
+              direction="horizontal"
+            />
           </div>
         )}
         {guest && (

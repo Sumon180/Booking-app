@@ -63,7 +63,7 @@ export const countrySides = {
     type: "Nearest country",
     place: [
       {
-        id: 1,
+        id: 11,
         name: "Germany",
         stay: "Cochem, RP",
         image: CochemRP,
@@ -73,7 +73,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 2,
+        id: 21,
         name: "India",
         stay: "Jodhpur",
         image: ankitGupta,
@@ -83,7 +83,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 3,
+        id: 31,
         name: "Japan",
         stay: "japan",
         image: japan,
@@ -93,7 +93,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 4,
+        id: 41,
         name: "Mexico",
         stay: "Kushtia",
         image: vancouver,
@@ -108,7 +108,7 @@ export const countrySides = {
     type: "Popuer visited",
     place: [
       {
-        id: 1,
+        id: 11,
         name: "New Zealand",
         stay: "Kushtia",
         image: vancouver,
@@ -118,7 +118,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 2,
+        id: 21,
         name: "Norway",
         stay: "Kushtia",
         image: vancouver,
@@ -128,7 +128,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 3,
+        id: 31,
         name: "Russia",
         stay: "Kushtia",
         image: vancouver,
@@ -138,7 +138,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 4,
+        id: 41,
         name: "South Korea",
         stay: "Kushtia",
         image: vancouver,
@@ -148,7 +148,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: Date.now().toString(),
+        id: Date.now().toString() + 1,
         name: "Spain",
         stay: "Kushtia",
         image: vancouver,
@@ -158,7 +158,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: Date.now().toString(),
+        id: Date.now().toString() + 2,
         name: "Bangladesh",
         stay: "Kushtia",
         image: vancouver,

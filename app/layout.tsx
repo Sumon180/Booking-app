@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import AppContextProvider from "@/context/AppContext";
 import Footer from "@/components/Footer";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
