@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BookForm from "@/components/BookForm";
 import { countrySides } from "@/data";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -19,12 +20,14 @@ const Home = () => {
                 key={country.id}
                 className="w-full rounded-md overflow-hidden"
               >
-                <Image
-                  // unoptimized
-                  src={country.image}
-                  alt="banner"
-                  className="w-full rounded-md"
-                />
+                <Link href={""}>
+                  <Image
+                    src={country.image}
+                    alt="banner"
+                    className="w-full rounded-md"
+                  />
+                </Link>
+
                 <div className="mt-3">
                   <p>
                     {country.stay}-{country.name}
@@ -32,8 +35,8 @@ const Home = () => {
                   <p className="text-sm text-gray-500">
                     {country.away} Kilometers away
                   </p>
-                  <p className="text-sm text-gray-500">
-                    {country.startDate}-{country.endDate}
+                  <p className="text-sm text-gray-500 font-semibold">
+                    {country.startDate} - {country.endDate}
                   </p>
                   <p className="text-sm">{country.amount} 1 day</p>
                 </div>
@@ -51,12 +54,13 @@ const Home = () => {
                 key={country.id}
                 className="w-full rounded-md overflow-hidden"
               >
-                <Image
-                  // unoptimized
-                  src={country.image}
-                  alt="banner"
-                  className="w-full rounded-md"
-                />
+                <Link href={""}>
+                  <Image
+                    src={country.image}
+                    alt="banner"
+                    className="w-full rounded-md"
+                  />
+                </Link>
                 <div className="mt-3">
                   <p>
                     {country.stay}-{country.name}
@@ -64,8 +68,8 @@ const Home = () => {
                   <p className="text-sm text-gray-500">
                     {country.away} Kilometers away
                   </p>
-                  <p className="text-sm text-gray-500">
-                    {country.startDate}-{country.endDate}
+                  <p className="text-sm text-gray-500 font-semibold">
+                    {country.startDate} - {country.endDate}
                   </p>
                 </div>
               </div>
@@ -82,12 +86,15 @@ const Home = () => {
                 key={country.id}
                 className="w-full rounded-md overflow-hidden"
               >
-                <Image
-                  // unoptimized
-                  src={country.image}
-                  alt="banner"
-                  className="w-full rounded-md"
-                />
+                <Link href={""}>
+                  <Image
+                    // unoptimized
+                    src={country.image}
+                    alt="banner"
+                    className="w-full rounded-md"
+                  />
+                </Link>
+
                 <div className="mt-3">
                   <p>
                     {country.stay}-{country.name}
@@ -95,8 +102,8 @@ const Home = () => {
                   <p className="text-sm text-gray-500">
                     {country.away} Kilometers away
                   </p>
-                  <p className="text-sm text-gray-500">
-                    {country.startDate}-{country.endDate}
+                  <p className="text-sm text-gray-500 font-semibold">
+                    {country.startDate} - {country.endDate}
                   </p>
                 </div>
               </div>
