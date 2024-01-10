@@ -20,7 +20,7 @@ const Home = () => {
                 key={country.id}
                 className="w-full rounded-md overflow-hidden"
               >
-                <Link href={""}>
+                <Link href={`/book/${country.id}`}>
                   <Image
                     src={country.image}
                     alt="banner"
@@ -54,7 +54,7 @@ const Home = () => {
                 key={country.id}
                 className="w-full rounded-md overflow-hidden"
               >
-                <Link href={""}>
+                <Link href={`/book/${country.id}`}>
                   <Image
                     src={country.image}
                     alt="banner"
@@ -86,7 +86,7 @@ const Home = () => {
                 key={country.id}
                 className="w-full rounded-md overflow-hidden"
               >
-                <Link href={""}>
+                <Link href={`/book/${country.id}`}>
                   <Image
                     // unoptimized
                     src={country.image}

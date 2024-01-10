@@ -1,4 +1,5 @@
 import { format, addDays } from "date-fns";
+import { v4 as uuidv4 } from "uuid";
 
 import vancouver from "@/public/pexels-onur-kurtic-205377.jpg";
 import sydney from "@/public/pexels-brett-stone-2845013.jpg";
@@ -18,7 +19,7 @@ export const countrySides = {
     type: "Most Visited country",
     place: [
       {
-        id: 2,
+        id: uuidv4(),
         name: "Australia",
         stay: "Sydney",
         image: sydney,
@@ -28,7 +29,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 3,
+        id: uuidv4(),
         name: "Canada",
         stay: "Vancouver, BC",
         image: vancouver,
@@ -38,7 +39,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 4,
+        id: uuidv4(),
         name: "China",
         stay: "Beijing",
         image: beyjing,
@@ -48,7 +49,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 5,
+        id: uuidv4(),
         name: "France",
         stay: "Brown Castle",
         image: BrownCastle,
@@ -63,7 +64,7 @@ export const countrySides = {
     type: "Nearest country",
     place: [
       {
-        id: 11,
+        id: uuidv4(),
         name: "Germany",
         stay: "Cochem, RP",
         image: CochemRP,
@@ -73,7 +74,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 21,
+        id: uuidv4(),
         name: "India",
         stay: "Jodhpur",
         image: ankitGupta,
@@ -83,7 +84,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 31,
+        id: uuidv4(),
         name: "Japan",
         stay: "japan",
         image: japan,
@@ -93,7 +94,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 41,
+        id: uuidv4(),
         name: "Mexico",
         stay: "Kushtia",
         image: vancouver,
@@ -108,7 +109,7 @@ export const countrySides = {
     type: "Popuer visited",
     place: [
       {
-        id: 11,
+        id: uuidv4(),
         name: "New Zealand",
         stay: "Kushtia",
         image: vancouver,
@@ -118,7 +119,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 21,
+        id: uuidv4(),
         name: "Norway",
         stay: "Kushtia",
         image: vancouver,
@@ -128,7 +129,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 31,
+        id: uuidv4(),
         name: "Russia",
         stay: "Kushtia",
         image: vancouver,
@@ -138,7 +139,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: 41,
+        id: uuidv4(),
         name: "South Korea",
         stay: "Kushtia",
         image: vancouver,
@@ -148,7 +149,7 @@ export const countrySides = {
         amount: "$56",
       },
       {
-        id: Date.now().toString() + 1,
+        id: uuidv4(),
         name: "Spain",
         stay: "Kushtia",
         image: vancouver,
