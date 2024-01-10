@@ -2,8 +2,11 @@ import Image from "next/image";
 import BookForm from "@/components/BookForm";
 import { countrySides } from "@/data";
 import Link from "next/link";
+import { getPlace } from "@/components/book/actions";
 
 const Home = () => {
+  const place = getPlace();
+
   return (
     <div className="bg-gray-100 pt-20 px-5">
       <div>
@@ -11,9 +14,7 @@ const Home = () => {
           <BookForm />
         </div>
         <div className="mt-10">
-          <p className="mb-3 text-lg font-semibold">
-            {countrySides.mostVisited.type}
-          </p>
+          <p className="mb-3 text-lg font-semibold">{place.mostVisited.type}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 lg:gap-5">
             {countrySides.mostVisited.place.map((country) => (
               <div

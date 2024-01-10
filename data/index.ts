@@ -15,6 +15,8 @@ const startDate = format(currentDate, "LLL dd");
 const endDateFormatted = format(endDate, "dd");
 
 export const countrySides = {
+  name: "Country Sides",
+  description: "Country Sides for the Visit",
   mostVisited: {
     type: "Most Visited country",
     place: [
