@@ -7,9 +7,3 @@ interface ParamslProps {
     id: string;
   };
 }
-
-interface BookParamslProps {
-  params: {
-    id: string;
-  };
-}

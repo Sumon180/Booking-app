@@ -9,9 +9,7 @@ const Home = () => {
   return (
     <div className="bg-gray-100 pt-20 px-5">
       <div>
-        <div className="w-full ">
-          <BookForm />
-        </div>
+        <BookForm />
         {vistPlace.visitedPlace.map((place) => (
           <div className="mt-10">
             <p className="mb-3 text-lg font-semibold">{place.categoryType}</p>
@@ -35,6 +33,7 @@ const Home = () => {
                     <p className="text-sm text-gray-500 font-semibold">
                       {item.startDate} - {item.endDate}
                     </p>
+                    <p className="text-sm font-semibold">{item.amount} 1 day</p>
                   </div>
                 </div>
               ))}

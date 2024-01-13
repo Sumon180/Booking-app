@@ -53,8 +53,8 @@ const BookForm = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto">
-      <div className="relative w-full md:h-16 md:bg-white rounded-full md:shadow-lg hover:shadow-none duration-200 flex flex-col md:flex-row max-md:gap-3">
+    <div className="max-w-5xl mx-auto sticky top-14">
+      <div className="relative w-full md:h-16 md:bg-white/50 rounded-full md:shadow-lg hover:shadow-none duration-200 flex flex-col md:flex-row max-md:gap-3">
         <button
           onClick={handlePlace}
           className={`h-full max-md:bg-white w-full md:w-4/12 hover:bg-gray-200 duration-200 rounded-full text-start p-3 pl-10 font-medium ${

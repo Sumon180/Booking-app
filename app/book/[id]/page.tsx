@@ -4,11 +4,10 @@ import { getVisitedPlaceById } from "@/components/book/actions";
 import Image from "next/image";
 import React from "react";
 
-const BookPage = ({ params }: BookParamslProps) => {
+const BookPage = ({ params }: any) => {
   const { id } = params;
 
   const bookPlace = getVisitedPlaceById(id);
-  console.log(bookPlace);
 
   return (
     <div className="pt-20">
