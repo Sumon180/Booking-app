@@ -1,5 +1,4 @@
 import { format, addDays } from "date-fns";
-import { v4 as uuidv4 } from "uuid";
 
 import vancouver from "@/public/pexels-onur-kurtic-205377.jpg";
 import sydney from "@/public/pexels-brett-stone-2845013.jpg";
@@ -19,7 +18,7 @@ const countrySides = {
   description: "Country Sides for the Visit",
   visitedPlace: [
     {
-      id: 99,
+      id: 1,
       categoryType: "Most Visited country",
       place: [
         {
@@ -33,7 +32,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 12,
           name: "Canada",
           stay: "Vancouver, BC",
           image: vancouver,
@@ -43,7 +42,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 13,
           name: "China",
           stay: "Beijing",
           image: beyjing,
@@ -53,7 +52,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 14,
           name: "France",
           stay: "Brown Castle",
           image: BrownCastle,
@@ -65,11 +64,11 @@ const countrySides = {
       ],
     },
     {
-      id: uuidv4(),
+      id: 2,
       categoryType: "Nearest country",
       place: [
         {
-          id: uuidv4(),
+          id: 21,
           name: "Germany",
           stay: "Cochem, RP",
           image: CochemRP,
@@ -79,7 +78,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 22,
           name: "India",
           stay: "Jodhpur",
           image: ankitGupta,
@@ -89,7 +88,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 23,
           name: "Japan",
           stay: "Japan",
           image: japan,
@@ -99,7 +98,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 24,
           name: "Mexico",
           stay: "Kushtia",
           image: vancouver,
@@ -111,11 +110,11 @@ const countrySides = {
       ],
     },
     {
-      id: uuidv4(),
+      id: 3,
       categoryType: "Popular visited",
       place: [
         {
-          id: uuidv4(),
+          id: 31,
           name: "New Zealand",
           stay: "Kushtia",
           image: vancouver,
@@ -125,7 +124,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 32,
           name: "Norway",
           stay: "Kushtia",
           image: vancouver,
@@ -135,7 +134,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 33,
           name: "Russia",
           stay: "Kushtia",
           image: vancouver,
@@ -145,7 +144,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 34,
           name: "South Korea",
           stay: "Kushtia",
           image: vancouver,
@@ -155,7 +154,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: uuidv4(),
+          id: 35,
           name: "Spain",
           stay: "Kushtia",
           image: vancouver,
@@ -165,7 +164,7 @@ const countrySides = {
           amount: "$56",
         },
         {
-          id: Date.now().toString() + 2,
+          id: 36,
           name: "Bangladesh",
           stay: "Kushtia",
           image: vancouver,
